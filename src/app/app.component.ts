@@ -43,18 +43,18 @@ export class AppComponent {
 EdicionDatos(id?:any,nombre?:string, descripcion?:string) {
   if ( id != 0) {
     const dialogRef = this.Modal.open(InsertarHeaderComponent, { 
-      height:   '36vh',
-      width:    '36vw',
-      maxWidth: '36vw',
+      height:   '42vh',
+      width:    '42vw',
+      maxWidth: '42vw',
       data: {id,nombre,descripcion}, 
       disableClose: false,
       panelClass: 'app-full-bleed-dialog'
     });
   }else{
     const dialogRef = this.Modal.open(InsertarHeaderComponent, { 
-      height:   '36vh',
-      width:    '36vw',
-      maxWidth: '36vw',
+      height:   '42vh',
+      width:    '42vw',
+      maxWidth: '42vw',
       data:  {}  ,
       disableClose: false,
       panelClass: 'app-full-bleed-dialog'

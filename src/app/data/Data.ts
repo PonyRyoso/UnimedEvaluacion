@@ -30,7 +30,7 @@ import { campos, headers, Propiedades } from "../Models/Propiedades";
     {
       id:            1,
       nombre      : "Unimed",
-      descripcion : " Ser Médicos"  
+      descripcion : " Servicios Médicos"  
       
    },
    {
@@ -38,7 +38,19 @@ import { campos, headers, Propiedades } from "../Models/Propiedades";
      nombre      : "EEH",
      descripcion : " Servicios Energéticos"  
      
-   }
+   },
+   {
+    id: 3 ,
+    nombre      : "Tigo",
+    descripcion : " Servicios Móviles"  
+    
+  },
+  {
+    id: 4,
+    nombre      : "Claro",
+    descripcion : " Servicios Móviles"  
+    
+  }
   ]
 
 

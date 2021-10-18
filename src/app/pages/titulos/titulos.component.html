@@ -16,8 +16,8 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let Titulo of Titulos">
-                  <td>
+                <tr  *ngFor="let Titulo of Titulos">
+                  <td >
                     <button *ngIf="Titulo.nombre != 'Acciones'" (click)="Modaltitulos(Titulo.id, Titulo.nombre)" mat-mini-fab  >
                         <mat-icon >create </mat-icon>
                     </button>
@@ -25,9 +25,9 @@
                         <mat-icon>delete</mat-icon>
                     </button>
                    </td>
-                  <th >{{Titulo?.id}}
+                  <th *ngIf="Titulo.nombre != 'Acciones'">{{Titulo?.id}}
                   </th>
-                  <td>{{ Titulo?.nombre}}
+                  <td *ngIf="Titulo.nombre != 'Acciones'">{{ Titulo?.nombre}}
                   </td>
                 
                 </tr>
