@@ -1,0 +1,28 @@
+<mat-card class="card">
+  <form [formGroup]="formulario" #f="ngForm">
+    <h3>
+      Campos
+    </h3>
+    <div formArrayName="FormCreado">
+      <div *ngFor="let trabajo of FormularioCreado.controls;  let i = index;">
+        <div *ngFor="let objeto of form">
+          <label> {{objeto.nombre}}  </label><br />
+          <input [type]="objeto.tipo" />
+        </div>
+        <hr />
+        <button (click)="borrarTrabajo(i)">Borrar</button>
+      </div>
+    
+      <div class="row">
+        <button  (click)="anadirForm()">
+          + Añadir
+        </button>
+        <button  *ngIf="!f.invalid" >
+          Guardar
+        </button>
+      </div>
+  
+      
+    </div>
+  </form>
+</mat-card>

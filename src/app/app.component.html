@@ -1,0 +1,59 @@
+
+<div class="container">
+  <div class="row">
+    <button (click)="Modaltitulos()" mat-raised-button class="buttonPrincipal" >
+      <mat-icon>
+        list
+      </mat-icon>
+      Titulos
+  </button>
+
+  <!-- <button (click)="EdicionDatos(0,'','')"  mat-raised-button class=" buttonPrincipal" >
+    <mat-icon>
+      list
+    </mat-icon>
+    Agregar Datos
+</button> -->
+
+<button (click)="ModalPrueba()"  mat-raised-button class=" buttonPrincipal" >
+  <mat-icon>
+    list
+  </mat-icon>
+ Agregar
+</button>
+
+  </div>
+ 
+</div>
+<div class ="Espacios">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+              <tr >
+                  <th  class="text-center" [headers]="tit.nombre" *ngFor="let tit of Titulos" scope="col"> {{ tit.nombre }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center" *ngFor="let Campo of Elementos">
+                <td headers="Acciones">
+                  <button   mat-mini-fab (click)="EdicionDatos(Campo.id,Campo.nombre,Campo.descripcion)"  >
+                      <mat-icon >create </mat-icon>
+                  </button>
+                  <button  (click)="EliminarCampo(Campo.id)" mat-mini-fab  color="primary" >
+                      <mat-icon>delete</mat-icon>
+                  </button>
+                 </td>  
+                <th  scope="row">{{Campo?.id}}
+                </th>
+                <td>{{ Campo?.nombre}}
+                </td>
+                <td >{{ Campo?.descripcion}}
+                </td>
+              
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+</div>
+   
