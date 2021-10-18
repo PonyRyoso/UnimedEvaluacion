@@ -17,10 +17,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: initial;
 }
 
-.backdropBackground{
-    filter:  blur();
-    filter: saturate(200px);
-}
 
 .custom-dialog >  mat-dialog-container {
     background: var(--main-bg-color);
