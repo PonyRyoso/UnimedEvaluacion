@@ -93,7 +93,6 @@ const dialogRef = this.Modal.open( PruebaComponent, {
       maxWidth: '50vw',
         disableClose: false,
         panelClass: 'app-full-bleed-dialog',
-        backdropClass: 'backdropBackground'
       });
  }
 }
